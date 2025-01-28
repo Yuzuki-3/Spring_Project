@@ -9,9 +9,10 @@ import com.example.demo.fizzBuzz.service.FizzBuzzService;
 @Controller
 public class FizzBuzzController {
 
+	//依存性の注入
 	private final FizzBuzzService fizzBuzzService;
 
-	//依存性の注入
+	//コンストラクタ
 	public FizzBuzzController(FizzBuzzService fizzBuzzService) {
 		this.fizzBuzzService = fizzBuzzService;
 	}
