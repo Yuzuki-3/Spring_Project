@@ -8,3 +8,6 @@ http://localhost:8080/plus
 
 //multi
 http://localhost:8080/multi
+
+//FizzBuzz
+http://localhost:8080/fizzbuzz
