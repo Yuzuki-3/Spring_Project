@@ -11,3 +11,9 @@ http://localhost:8080/multi
 
 //FizzBuzz
 http://localhost:8080/fizzbuzz
+
+//minus
+http://localhost:8080/minus
+
+//calculator
+http://localhost:8080/calculator

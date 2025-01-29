@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>計算機</title>
+</head>
+
+<body>
+	<h1>計算機</h1>
+
+	<form action="/calculator" method="post">
+		<input type="number" name="leftNum" required>
+		<select name="operator">
+			<option value="+">+</option>
+			<option value="-">-</option>
+			<option value="×">×</option>
+			<option value="÷">÷</option>
+		</select>
+		<input type="number" name="rightNum" required>
+		<input type="submit" value="=">
+
+	</form>
+
+	<p th:text="${result}"></p>
+
+</body>
+
+</html>

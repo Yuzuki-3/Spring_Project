@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+	<meta charset="UTF-8">
+	<title>引き算</title>
 </head>
+
 <body>
+	<h1>引き算</h1>
+
+	<form action="/minus" method="post">
+		<input type="number" name="leftNum" required> -
+		<input type="number" name="rightNum" required>
+		<input type="submit" value="=">
+
+	</form>
+	
+	<p th:if="${result != null}" th:text="${result}"></p>
 
 </body>
+
 </html>
