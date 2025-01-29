@@ -10,9 +10,10 @@ import com.example.demo.calculator.service.CalculatorService;
 
 @Controller
 public class CalculatorController {
-
+	//計算処理
 	private final CalculatorService calculatorService;
 
+	//依存性の注入
 	public CalculatorController(CalculatorService calculatorService) {
 		this.calculatorService = calculatorService;
 
@@ -29,9 +30,12 @@ public class CalculatorController {
 			@RequestParam("rightNum") int rightNum,
 			@RequestParam("operator") String operator, Model model) {
 
+		//計算処理、結果の取得
 		String result = calculatorService.calculate(leftNum, rightNum, operator);
 
+		//計算結果をモデルに追加
 		model.addAttribute("result", result);
+		//計算画面に遷移
 		return "calculator";
 	}
 
