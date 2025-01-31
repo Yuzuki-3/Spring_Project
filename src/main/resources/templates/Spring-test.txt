@@ -17,3 +17,9 @@ http://localhost:8080/minus
 
 //calculator
 http://localhost:8080/calculator
+
+//sampleAPI
+http://localhost:8080/sampleAPI
+
+//animalSearch
+http://localhost:8080/animalSearch

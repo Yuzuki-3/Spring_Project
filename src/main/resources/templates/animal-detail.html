@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>動物詳細画面</title>
+</head>
+<body>
+	<h1>動物詳細画面</h1>
+	<table th:each="animal : ${animalData}">
+		<tr>
+			<td>No：</td>
+			<td th:text="${animal.id}"></td>
+		</tr>
+		<tr>
+			<td>英名：</td>
+			<td th:text="${animal.name}"></td>
+		</tr>
+		<tr>
+			<td>和名：</td>
+			<td th:text="${animal.japaneseName}"></td>
+		</tr>
+		<tr>
+			<td>鳴き声：</td>
+			<td th:text="${animal.cry}"></td>
+		</tr>
+	</table>
+	<br>
+	<form action="animalSearch" method="get">
+		<input type="submit" value="トップへ">
+	</form>
+</body>
+</html>
